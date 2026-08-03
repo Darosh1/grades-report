@@ -26,3 +26,7 @@ print()
 # The student with the highest average score.
 top_student = average_by_student.idxmax()
 print("Top student:", top_student)
+
+highest_scores = grades.groupby("subject")["score"].max()
+
+print(f"Highest scores by subject:\n{highest_scores}")
